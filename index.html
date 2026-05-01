@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Hệ Mặt Trời 3D • Thuyết trình</title>
-  <!-- File CSS -->
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Hệ Mặt Trời • Thuyết Trình</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Không gian vẽ canvas -->
-  <canvas id="solarCanvas" aria-label="Mô phỏng Hệ Mặt Trời, click vào hành tinh để xem thông tin"></canvas>
-  
-  <!-- Bảng thông tin hành tinh -->
-  <div id="info-panel" class="hidden" role="dialog" aria-modal="true" aria-labelledby="planet-name">
-    <div class="panel-content">
-      <h2 id="planet-name"></h2>
-      <div id="planet-details"></div>
-      <button id="back-btn" aria-label="Quay lại toàn cảnh">← Quay lại hệ mặt trời</button>
-    </div>
-  </div>
+<canvas id="c" aria-label="Mô phỏng Hệ Mặt Trời, click vào hành tinh để xem thông tin"></canvas>
 
-  <!-- File JavaScript -->
-  <script src="script.js"></script>
+<div id="panel" class="hidden" role="dialog" aria-modal="true" aria-labelledby="planet-name">
+  <div class="card">
+    <h2 id="planet-name"></h2>
+    <div id="planet-details"></div>
+    <button id="back-btn" aria-label="Quay lại toàn cảnh">← Quay lại hệ mặt trời</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
